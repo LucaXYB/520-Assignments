@@ -1,0 +1,16 @@
+echo "Hello and welcome to the new quarter!"
+date
+echo $HOME
+cd $HOME
+ls
+mkdir temp
+mv temp temp_new
+cd temp_new
+touch file5
+mv file5 test
+cd ..
+rm -r temp_new
+echo "It's a secret!" > secretfile
+chmod a-w secretfile
+ls -l secretfile
+cat >> secretfile
